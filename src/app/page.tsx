@@ -60,7 +60,7 @@ export default function Home() {
              {/* INICIO GRID */}
              <div className='grid grid-cols-4 gap-4'>
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={70} height={70} />
+                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
                 Believer
                 <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
@@ -68,7 +68,7 @@ export default function Home() {
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={70} height={70} />
+                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
                 Believer
                 <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
@@ -76,7 +76,7 @@ export default function Home() {
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={70} height={70} />
+                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
                 Believer
                 <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
@@ -84,7 +84,7 @@ export default function Home() {
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={70} height={70} />
+                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
                 Believer
                 <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
@@ -92,7 +92,7 @@ export default function Home() {
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={70} height={70} />
+                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
                 Believer
                 <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
@@ -100,7 +100,7 @@ export default function Home() {
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={70} height={70} />
+                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
                 Believer
                 <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
@@ -108,7 +108,7 @@ export default function Home() {
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={70} height={70} />
+                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
                 Believer
                 <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
@@ -116,7 +116,7 @@ export default function Home() {
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={70} height={70} />
+                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
                 Believer
                 <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
