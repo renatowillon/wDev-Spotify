@@ -1,16 +1,15 @@
-import React  from "react";
 
-interface MaisUsadasProps {
-    Image: string;
-    Cantor: string;
+interface ListPrimariaProps{
+    ImageUrl: string
+    Cantor: string
 }
 
-const MaisUsadas: React.FC<MaisUsadasProps> = (MaisUsadasProps) => {
-    return (
+export function MaisTocadas({ImageUrl, Cantor}: ListPrimariaProps){
+return(
         <div>
-
+            {ImageUrl}
+            {Cantor}
         </div>
-    )
-}
+)
 
-export default MaisUsadas;
+}

@@ -55,10 +55,10 @@ export default function Home() {
               <button className='rounded-full bg-black/40 w-8 h-8 flex items-center justify-center pr-1'><ChevronLeft /></button>
               <button className='rounded-full bg-black/30 w-8 h-8 flex items-center justify-center pl-1'><ChevronRight /></button>
             </div>
-            <h1 className='font-bold text-3xl mt-5 mb-3'>Olá, Boa tarde</h1>
+            <h1 className='font-bold text-3xl mt-5 mb-3 pl-3'>Olá, Boa tarde</h1>
 
              {/* INICIO GRID */}
-             <div className='grid grid-cols-4 gap-4'>
+             <div className='grid grid-cols-4 gap-4 pl-3'>
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
                 <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
                 Believer
@@ -122,9 +122,16 @@ export default function Home() {
                   <Play size={20} fill="bg-black"/>
                 </button>
               </div>
+              
 
              </div>
              {/* FIM GRID */}
+
+             {/* INICIO GRID 2 */}
+             <h1 className='font-bold text-2xl mt-5 mb-3 pl-3'>Os maiores hits do momento</h1>
+             
+             
+             {/* FIM GRID 2 */}
           </main>
           {/* FIM CONTEUDO */}
         
@@ -132,8 +139,10 @@ export default function Home() {
         {/* FIM PAGE TOTAL */}
 
         {/* INICIO FOOTER */}
-        <footer className="bg-zinc-950 p-6">
-          Footer
+        <footer className="bg-zinc-950 p-6 grid-cols-3 flex justify-between">
+          <div> PRIMEIRA </div>
+          <div> SEGUNDA </div>
+          <div> TERCEIRO </div>
         </footer>
         {/* FIM FOOTER */}
     
