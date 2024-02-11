@@ -1,4 +1,4 @@
-import { Home as HomeIcon, Search, LibraryBig, ArrowRight, Plus, List, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, Repeat2, PlaySquare, Mic2, ListTree, MonitorSpeaker, Volume2, Airplay, Maximize2 } from 'lucide-react'
+import { Home as HomeIcon, Search, LibraryBig, ArrowRight, Plus, List, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, Repeat2, PlaySquare, Mic2, ListTree, MonitorSpeaker, Volume2, Airplay, Maximize2, ArrowDownCircle, Bell } from 'lucide-react'
 import Image from "next/image";
 
 
@@ -46,7 +46,7 @@ export default function Home() {
               {/* INICIO LIST MENU LATERAL*/}
               <div className="grid grid-rows-4 py-2">
                 <div className="flex items-center gap-3 rounded p-2 hover:bg-white/20">
-                <Image src="/Believer.jpg" alt="Believer" width={55} height={55} />
+                <Image src="/assets/mais-tocadas.png" alt="Believer" width={55} height={55} />
                 <div className="flex flex-col gap-1">
                   <strong>Mais Curtidas</strong>
                   <span className="text-sm text-zinc-400">Playlist • 35 músicas</span>
@@ -54,7 +54,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center gap-3 rounded p-2 hover:bg-white/20">
-                <Image src="/Believer.jpg" alt="Believer" width={55} height={55} />
+                <Image src="/assets/rap.jpg" alt="Believer" width={55} height={55} />
                 <div className="flex flex-col gap-1">
                   <strong>Rap</strong>
                   <span className="text-sm text-zinc-400">Playlist • Renato Willon</span>
@@ -62,7 +62,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center gap-3 rounded p-2 hover:bg-white/20">
-                <Image src="/Believer.jpg" alt="Believer" width={55} height={55} />
+                <Image src="/assets/pedro-henrique.jpg" className="rounded-full" alt="Believer" width={55} height={55} />
                 <div className="flex flex-col gap-1">
                   <strong>Pedro Henrique</strong>
                   <span className="text-sm text-zinc-400">Artista</span>
@@ -70,7 +70,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-center gap-3 rounded p-2 hover:bg-white/20">
-                <Image src="/Believer.jpg" alt="Believer" width={55} height={55} />
+                <Image src="/assets/newid.jpg" className="rounded-full" alt="Believer" width={55} height={55} />
                 <div className="flex flex-col gap-1">
                   <strong>Banda New ID</strong>
                   <span className="text-sm text-zinc-400">Artista</span>
@@ -87,9 +87,19 @@ export default function Home() {
           
           {/* INICIO CONTEUDO */}
           <main className="flex-1 bg-zinc-900 rounded-md p-3">
-            <div className='flex items-center gap-3 p-3'>
-              <button className='rounded-full bg-black/40 w-8 h-8 flex items-center justify-center pr-1'><ChevronLeft /></button>
-              <button className='rounded-full bg-black/30 w-8 h-8 flex items-center justify-center pl-1'><ChevronRight /></button>
+            <div className='grid-cols-2 flex justify-between  items-center gap-3 p-3'>
+              <div className="flex items-center gap-3">
+                <button className='rounded-full bg-black/40 w-8 h-8 flex items-center justify-center pr-1'><ChevronLeft /></button>
+                <button className='rounded-full bg-black/30 w-8 h-8 flex items-center justify-center pl-1'><ChevronRight /></button>
+              </div>
+              <div className="flex items-center gap-4">
+                <button className="rounded-full bg-zinc-100 text-zinc-900 text-sm font-semibold py-1.5 px-3 hover:scale-105 hover:bg-zinc-200">Ver planos Premium</button>
+                <button className="flex items-center gap-2 rounded-full bg-black/60 text-zinc-100 text-sm font-semibold py-1.5 px-3 hover:scale-105"><ArrowDownCircle size={20}/> Instalar Aplicativo</button>
+                <div className="size-8 text-zinc-400 rounded-full bg-black/60 flex items-center justify-center pr-0.5 hover:scale-105 hover:pr-0 hover:text-zinc-100"><Bell size={18} /></div>
+                <div className="size-8 rounded-full bg-black/60 flex items-center justify-center">
+                  <Image src="/assets/avatar.jpg" alt="Foto do Avatar" width={20} height={20} className="rounded-full hover:scale-105" />
+                </div>
+              </div>            
             </div>
             <h1 className='font-bold text-3xl mt-5 mb-3 pl-3'>Olá, Boa tarde</h1>
 
@@ -97,66 +107,66 @@ export default function Home() {
              <div className='grid grid-cols-4 gap-4 pl-3'>
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
                 <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
-                Believer
-                <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
+                Imagine Dragons
+            {/*   <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
-                </button>
+                  </button> */ }
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
-                Believer
-                <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
+                <Image src="/assets/pedro-henrique.jpg" alt="Believer" width={50} height={50} />
+                Pedro Henrique
+               {/* <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
-                </button>
+                </button>*/}
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
-                Believer
-                <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
+                <Image src="/assets/sucessos-gospel.jpg" alt="Believer" width={50} height={50} />
+                Sucessos Gospel
+               {/* <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
-                </button>
+                </button>*/}
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
-                Believer
-                <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
+                <Image src="/assets/melim.jpg" alt="Believer" width={50} height={50} />
+                Melim
+               {/* <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
-                </button>
+                </button>*/}
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
-                Believer
-                <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
+                <Image src="/assets/projota.jpg" alt="Believer" width={50} height={50} />
+                Projota
+               {/* <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
-                </button>
+                </button>*/}
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
-                Believer
-                <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
+                <Image src="/assets/bonjovi.jpg" alt="Believer" width={50} height={50} />
+                Bon Jovi
+               {/* <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
-                </button>
+                </button>*/}
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
-                Believer
-                <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
+                <Image src="/assets/pagode-restaura.jpg" alt="Believer" width={50} height={50} />
+                Pagode Restaura
+               {/* <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
-                </button>
+                </button>*/}
               </div>
 
               <div className='bg-white/10 rounded group overflow-hidden flex items-center gap-3 text-sm font-semibold hover:bg-white/20 transition-colors'>
-                <Image src="/Believer.jpg" alt="Believer" width={50} height={50} />
-                Believer
-                <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
+                <Image src="/assets/mais-tocadas.png" alt="Believer" width={50} height={50} />
+                Mais Curtidas
+               {/* <button className='w-10 h-10 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-4 invisible group-hover:visible hover:scale-105'>
                   <Play size={20} fill="bg-black"/>
-                </button>
+                </button>*/}
               </div>
               
 
@@ -170,57 +180,57 @@ export default function Home() {
               
              <div className="bg-white/5 p-4 rounded flex flex-col gap-1 relative group hover:bg-white/20">
                 <div className="relative group">
-                  <Image src="/Believer.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
+                  <Image src="/assets/daily-mix1.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
                   <button className='w-10 h-10 flex items-center absolute bottom-1 right-1 justify-center pl-1 rounded-full bg-green-400 text-black ml-auto invisible group-hover:visible hover:scale-105'>
                     <Play size={20} fill="bg-black"/>
                   </button>
                 </div>
                 <strong className="font-semibold">Daily Mix 1</strong>
-                <span className="text-sm text-zinc-400">Pedro Henrique, Banda Universos, ...</span>
+                <span className="text-sm text-zinc-400">Pedro Henrique, Banda Universos, Daniela...</span>
               </div>
 
               <div className="bg-white/5 p-4 rounded flex flex-col gap-1 relative group hover:bg-white/20">
                 <div className="relative group">
-                  <Image src="/Believer.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
+                  <Image src="/assets/daily-mix2.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
                   <button className='w-10 h-10 flex items-center absolute bottom-1 right-1 justify-center pl-1 rounded-full bg-green-400 text-black ml-auto invisible group-hover:visible hover:scale-105'>
                     <Play size={20} fill="bg-black"/>
                   </button>
                 </div>
-                <strong className="font-semibold">Daily Mix 1</strong>
-                <span className="text-sm text-zinc-400">Pedro Henrique, Banda Universos, ...</span>
+                <strong className="font-semibold">Daily Mix 2</strong>
+                <span className="text-sm text-zinc-400">Melim, Projota, Alok e mais</span>
               </div>
 
               <div className="bg-white/5 p-4 rounded flex flex-col gap-1 relative group hover:bg-white/20">
                 <div className="relative group">
-                  <Image src="/Believer.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
+                  <Image src="/assets/daily-mix3.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
                   <button className='w-10 h-10 flex items-center absolute bottom-1 right-1 justify-center pl-1 rounded-full bg-green-400 text-black ml-auto invisible group-hover:visible hover:scale-105'>
                     <Play size={20} fill="bg-black"/>
                   </button>
                 </div>
-                <strong className="font-semibold">Daily Mix 1</strong>
-                <span className="text-sm text-zinc-400">Pedro Henrique, Banda Universos, ...</span>
+                <strong className="font-semibold">Daily Mix 3</strong>
+                <span className="text-sm text-zinc-400">Thalles Roberto, Ministério Zoe, Banda...</span>
               </div>
 
               <div className="bg-white/5 p-4 rounded flex flex-col gap-1 relative group hover:bg-white/20">
                 <div className="relative group">
-                  <Image src="/Believer.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
+                  <Image src="/assets/daily-mix4.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
                   <button className='w-10 h-10 flex items-center absolute bottom-1 right-1 justify-center pl-1 rounded-full bg-green-400 text-black ml-auto invisible group-hover:visible hover:scale-105'>
                     <Play size={20} fill="bg-black"/>
                   </button>
                 </div>
-                <strong className="font-semibold">Daily Mix 1</strong>
-                <span className="text-sm text-zinc-400">Pedro Henrique, Banda Universos, ...</span>
+                <strong className="font-semibold">Daily Mix 4</strong>
+                <span className="text-sm text-zinc-400">Lu Alone, Isaias Saad, Priscilla e mais</span>
               </div>
 
               <div className="bg-white/5 p-4 rounded flex flex-col gap-1 relative group hover:bg-white/20">
                 <div className="relative group">
-                  <Image src="/Believer.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
+                  <Image src="/assets/daily-mix5.jpg" className="w-full rounded" alt="Believer" width={120} height={120} />
                   <button className='w-10 h-10 flex items-center absolute bottom-1 right-1 justify-center pl-1 rounded-full bg-green-400 text-black ml-auto invisible group-hover:visible hover:scale-105'>
                     <Play size={20} fill="bg-black"/>
                   </button>
                 </div>
-                <strong className="font-semibold">Daily Mix 1</strong>
-                <span className="text-sm text-zinc-400">Pedro Henrique, Banda Universos, ...</span>
+                <strong className="font-semibold">Daily Mix 5</strong>
+                <span className="text-sm text-zinc-400">Tribo da Periferia, Hungria, Pacificadores...</span>
               </div>
 
              </div>
@@ -256,7 +266,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <span className="text-sm text-zinc-400">0:31</span>
               <div className="h-1 rounded-full w-96 bg-zinc-600">
-                <div className="h-1 rounded-full w-40 bg-zinc-400 hover:bg-lime-500"></div>
+                <div className="h-1 rounded-full w-40 bg-zinc-400 hover:bg-green-400"></div>
               </div>
               <span className="text-sm text-zinc-400">2:14</span>
             </div>
@@ -269,7 +279,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <Volume2 size={20} className="text-zinc-400 hover:text-zinc-100" />
               <div className="h-1 w-24 rounded-full bg-zinc-600">
-                <div className="h-1 w-12 rounded-full bg-zinc-400 hover:bg-lime-500"></div>
+                <div className="h-1 w-12 rounded-full bg-zinc-400 hover:bg-green-400"></div>
               </div>
             </div>
             <Airplay size={20} className="text-zinc-400 hover:text-zinc-100" />
